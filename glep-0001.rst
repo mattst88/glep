@@ -1,6 +1,6 @@
 ---
 GLEP: 1
-Title: GLEP Purpose and Guidelines
+Title: GLEP purpose and guidelines
 Author: Grant Goodyear <g2boojum@gentoo.org>,
         Michał Górny <mgorny@gentoo.org>,
         Ulrich Müller <ulm@gentoo.org>
@@ -8,7 +8,7 @@ Type: Informational
 Status: Active
 Version: 4
 Created: 2003-05-31
-Last-Modified: 2023-02-22
+Last-Modified: 2025-06-30
 Post-History: 2003-06-01, 2003-07-02, 2008-01-19, 2008-06-05, 2011-03-09,
               2013-12-14, 2017-09-17, 2018-07-10, 2019-11-24
 Content-Type: text/x-rst
@@ -53,7 +53,7 @@ Gentoo Linux community consensus or recommendation, so users and implementors
 are free to ignore Informational GLEPs or follow their advice.
 
 
-GLEP Work Flow
+GLEP work flow
 ==============
 
 The GLEP editors assign GLEP numbers and change their status. Please send all
@@ -217,8 +217,8 @@ Each GLEP should have the following parts:
    should be relicensed to CC-BY-SA-4.0 when they are updated.
 
 
-GLEP Formating and Template
-===========================
+GLEP formatting and template
+============================
 
 GLEPs are UTF-8 encoded text files written in ReStructuredText markup
 [#ReSTHOME]_ that is then converted to HTML using Docutils [#DOCUTILS]_.
@@ -230,7 +230,7 @@ For best interoperability, the GLEPs using ReStructuredText format must use
 ``.rst`` file suffix.
 
 
-GLEP Header
+GLEP header
 ===========
 
 Every GLEP has certain attributes associated with it. When a GLEP is sent
@@ -309,7 +309,7 @@ Replaced-By should be added to all replaced GLEPs and their status should
 be updated to Replaced.
 
 
-Reporting GLEP Bugs, or Submitting GLEP Updates
+Reporting GLEP bugs, or submitting GLEP updates
 ===============================================
 
 How you report a bug, or submit a GLEP update depends on several factors, such
@@ -332,7 +332,7 @@ the GLEP rather than just fixing typos or adding small clarifications)
 should be approved by the Gentoo Council before being merged.
 
 
-Transferring GLEP Ownership
+Transferring GLEP ownership
 ===========================
 
 It occasionally becomes necessary to transfer ownership of GLEPs to a new
@@ -352,14 +352,14 @@ respond to email in a timely manner, the GLEP editors will make a unilateral
 decision (it's not like such decisions can't be reversed :).
 
 
-References and Footnotes
+References and footnotes
 ========================
 
 .. [#PYTHON] https://www.python.org/
 
-.. [#PEPS] https://www.python.org/dev/peps/
+.. [#PEPS] https://peps.python.org/
 
-.. [#PEP1] https://www.python.org/dev/peps/pep-0001/
+.. [#PEP1] https://peps.python.org/pep-0001/
 
 .. [#VCS] https://gitweb.gentoo.org/data/glep.git
 
@@ -375,9 +375,9 @@ References and Footnotes
 
 .. [#CC-BY-SA-4.0] https://creativecommons.org/licenses/by-sa/4.0/
 
-.. [#ReSTHOME] http://docutils.sourceforge.net/rst.html
+.. [#ReSTHOME] https://docutils.sourceforge.io/rst.html
 
-.. [#DOCUTILS] http://docutils.sourceforge.net/
+.. [#DOCUTILS] https://docutils.sourceforge.io/
 
 .. [#GLEP2] https://www.gentoo.org/glep/glep-0002.html
 
