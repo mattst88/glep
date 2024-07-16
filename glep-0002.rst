@@ -1,14 +1,14 @@
 ---
 GLEP: 2
-Title: Sample ReStructuredText GLEP Template
+Title: Sample ReStructuredText GLEP template
 Author: Grant Goodyear <g2boojum@gentoo.org>,
         Chris Reffett <creffett@gentoo.org>,
         Ulrich Müller <ulm@gentoo.org>
 Type: Informational
 Status: Active
-Version: 4.1
+Version: 4.2
 Created: 2003-05-31
-Last-Modified: 2023-02-22
+Last-Modified: 2025-06-30
 Post-History: 2003-06-02, 2013-12-17, 2017-09-17, 2019-11-24
 Content-Type: text/x-rst
 ---
@@ -54,17 +54,17 @@ ReStructuredText is used to allow GLEP authors more functionality and
 expressivity, while maintaining easy readability in the source text.  The
 processed HTML form makes the functionality accessible to readers: live
 hyperlinks, styled text, tables, images, and automatic tables of contents,
-among other advantages.  
+among other advantages.
 
 
-Backwards Compatibility
+Backwards compatibility
 =======================
 
 Not a problem for this GLEP.  This section should be included *even* when it
 is only to state that there are no backwards compatibility issues.
 
 
-How to Use This Template
+How to use this template
 ========================
 
 To use this template you must first decide whether your GLEP is going to be an
@@ -134,7 +134,7 @@ directions below.
 - Send your GLEP submission to the GLEP editors at glep@gentoo.org.
 
 
-ReStructuredText GLEP Formatting Requirements
+ReStructuredText GLEP formatting requirements
 =============================================
 
 The following is a GLEP-specific summary of reStructuredText syntax.  For the
@@ -152,45 +152,46 @@ circumstances should your lines extend past column 79.  If your code samples
 spill over column 79, you should rewrite them.
 
 
-Section Headings
+Section headings
 ----------------
 
-GLEP headings must begin in column zero and the initial letter of each word
-must be capitalized as in book titles.  Acronyms should be in all capitals.
-Section titles must be adorned with an underline, a single repeated
+GLEP headings must begin in column zero and should use sentence case, i.e.
+their first word should start with a capital letter, and all other words
+(except proper nouns) should be in lower case.  Acronyms should be in all
+capitals.  Section titles must be adorned with an underline, a single repeated
 punctuation character, which begins in column zero and must extend at least as
 far as the right edge of the title text (4 characters minimum).  First-level
 section titles are underlined with "=" (equals signs), second-level section
 titles with "-" (hyphens), and third-level section titles with "'" (single
 quotes or apostrophes).  For example::
 
-    First-Level Title
+    First-level title
     =================
 
-    Second-Level Title
+    Second-level title
     ------------------
 
-    Third-Level Title
+    Third-level title
     '''''''''''''''''
 
 If there are more than three levels of sections in your GLEP, you may insert
 overline/underline-adorned titles for the first and second levels as follows::
 
     ============================
-    First-Level Title (optional)
+    First-level title (optional)
     ============================
 
     -----------------------------
-    Second-Level Title (optional)
+    Second-level title (optional)
     -----------------------------
 
-    Third-Level Title
+    Third-level title
     =================
 
-    Fourth-Level Title
+    Fourth-level title
     ------------------
 
-    Fifth-Level Title
+    Fifth-level title
     '''''''''''''''''
 
 You shouldn't have more than five levels of sections in your GLEP.  If you do,
@@ -213,7 +214,7 @@ are not indented unless they are part of an indented construct (such as a
 block quote or a list item).
 
 
-Inline Markup
+Inline markup
 -------------
 
 Portions of text within paragraphs and other text blocks may be
@@ -227,7 +228,7 @@ styled.  For example::
     so they're safe for any kind of code snippets.
 
 
-Block Quotes
+Block quotes
 ------------
 
 Block quotes consist of indented body elements.  For example::
@@ -243,10 +244,10 @@ Block quotes may be nested inside other body elements.  Use a 4-space tab
 per indent level.
 
 
-Literal Blocks
+Literal blocks
 --------------
 
-..  
+..
     In the text below, double backquotes are used to denote inline
     literals.  "``::``" is written so that the colons will appear in a
     monospaced font; the backquotes (``) are markup, not part of the
@@ -454,8 +455,8 @@ followed by the footnote body.  For example::
     References
     ==========
 
-    .. [2] GLEP 1, "GLEP Purpose and Guidelines", Goodyear, Warsaw, Hylton
-       (https://www.gentoo.org/glep/glep-0001.html)
+    .. [2] GLEP 1, "GLEP purpose and guidelines", Goodyear,
+       https://www.gentoo.org/glep/glep-0001.html
 
 If you decide to provide an explicit URL for a GLEP, please use this as
 the URL template::
@@ -479,7 +480,7 @@ other characters are allowed).  For example::
     References
     ==========
 
-    .. [#GLEP-1] GLEP 1, "GLEP Purpose and Guidelines", Goodyear
+    .. [#GLEP-1] GLEP 1, "GLEP purpose and guidelines", Goodyear,
        https://www.gentoo.org/glep/glep-0001.html
 
 Footnotes and footnote references will be numbered automatically, and
@@ -522,7 +523,7 @@ or ASCII art alternatives to any images you include.  For example::
 
 
 
-Escaping Mechanism
+Escaping mechanism
 ------------------
 
 reStructuredText uses backslashes ("``\``") to override the special
@@ -538,7 +539,7 @@ If you find that you need to use a backslash in your text, consider
 using inline literals or a literal block instead.
 
 
-Habits to Avoid
+Habits to avoid
 ===============
 
 Many programmers who are familiar with TeX often write quotation marks
@@ -561,29 +562,29 @@ Many other constructs and variations are possible.  For more details
 about the reStructuredText markup, in increasing order of
 thoroughness, please see:
 
-* `A ReStructuredText Primer`__, a gentle introduction.
+* `A ReStructuredText primer`__, a gentle introduction.
 
-  __ http://docutils.sourceforge.net/docs/rst/quickstart.html
+  __ https://docutils.sourceforge.io/docs/user/rst/quickstart.html
 
 * `Quick reStructuredText`__, a users' quick reference.
 
-  __ http://docutils.sourceforge.net/docs/rst/quickref.html
+  __ https://docutils.sourceforge.io/docs/user/rst/quickref.html
 
-* `reStructuredText Markup Specification`__, the final authority.
+* `reStructuredText markup specification`__, the final authority.
 
-  __ http://docutils.sourceforge.net/spec/rst/reStructuredText.html
+  __ https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html
 
 The processing of reStructuredText GLEPs is done using Docutils_.  If
 you have a question or require assistance with reStructuredText or
 Docutils, please `post a message`_ to the `Docutils-Users mailing
 list`_.  The `Docutils project web site`_ has more information.
 
-.. _Docutils: http://docutils.sourceforge.net/
+.. _Docutils: https://docutils.sourceforge.io/
 .. _post a message:
    mailto:docutils-users@lists.sourceforge.net?subject=GLEPs
 .. _Docutils-Users mailing list:
    https://sourceforge.net/projects/docutils/lists/docutils-users
-.. _Docutils project web site: http://docutils.sourceforge.net/
+.. _Docutils project web site: https://docutils.sourceforge.io/
 
 
 References
@@ -591,10 +592,11 @@ References
 
 .. [#PYTHON] https://www.python.org/
 
-.. [#PEP12] https://www.python.org/dev/peps/pep-0012/
+.. [#PEP12] PEP 12, "Sample reStructuredText PEP template",
+   Goodger, Warsaw, Cannon, https://peps.python.org/pep-0012/
 
-.. [#GLEP1] GLEP 1, GLEP Purpose and Guidelines, Goodyear, 
-   (https://www.gentoo.org/glep/glep-0001.html)
+.. [#GLEP1] GLEP 1, "GLEP purpose and guidelines", Goodyear, Górny, Müller,
+   https://www.gentoo.org/glep/glep-0001.html
 
 
 Copyright
