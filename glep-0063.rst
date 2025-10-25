@@ -145,7 +145,8 @@ their primary key).
 
 5. Encrypted backup of your secret keys.
 
-6. Upload to SKS or another public keyserver pool.
+6. Upload to public keyservers (e.g. Ubuntu [#UBUNTU_KS]_, OpenPGP.org
+   [#OPENPGP_ORG]_).
 
 Gentoo Infrastructure
 =====================
@@ -203,6 +204,12 @@ References
 
 .. [#RFC9580] RFC 9580: OpenPGP
    (https://www.rfc-editor.org/rfc/rfc9580)
+
+.. [#UBUNTU_KS] Ubuntu - OpenPGP Keyserver
+   (https://keyserver.ubuntu.com/)
+
+.. [#OPENPGP_ORG] keys.openpgp.org
+   (https://keys.openpgp.org/)
 
 .. [#DEBIANGPG] Debian GPG documentation
    (https://wiki.debian.org/Keysigning)
