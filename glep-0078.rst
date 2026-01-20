@@ -7,7 +7,7 @@ Type: Standards Track
 Status: Final
 Version: 1.1
 Created: 2018-11-15
-Last-Modified: 2023-05-14
+Last-Modified: 2026-01-20
 Post-History: 2018-11-17, 2019-07-08, 2021-09-13, 2021-09-22, 2022-05-28,
               2022-09-21
 Content-Type: text/x-rst
@@ -17,7 +17,7 @@ Abstract
 ========
 
 This GLEP proposes a new binary package container format for Gentoo.
-The current tbz2/XPAK format is shortly described, and its deficiences
+The current tbz2/XPAK format is shortly described, and its deficiencies
 are explained.  Accordingly, the requirements for a new format are set
 and a gpkg format satisfying them is proposed.  The rationale for
 the design decisions is provided.
@@ -190,7 +190,7 @@ Specification
 The container format
 --------------------
 
-The gpkg package container is an uncompressed .tar achive whose filename
+The gpkg package container is an uncompressed .tar archive whose filename
 should use ``.gpkg.tar`` suffix.
 
 The archive contains a number of files.  All package-related files
@@ -591,7 +591,7 @@ are originating from the same binary package.  This opens up
 the possibility of a replacement/reuse attack, e.g. combining the signed
 metadata from foo-1.1 with signed image from foo-1.0.  The new binary
 package passes the signature check.  To prevent this type of attack,
-we need the additional Menifest file and its signature to verify
+we need the additional Manifest file and its signature to verify
 the authenticity of the complete binary package.
 
 
