@@ -4,10 +4,11 @@ Title: Package and category metadata
 Author: Michał Górny <mgorny@gentoo.org>
 Type: Standards Track
 Status: Final
-Version: 1.4
+Version: 1.5
 Created: 2016-03-14
-Last-Modified: 2023-02-22
-Post-History: 2016-03-16, 2018-02-20, 2022-05-22, 2022-10-07, 2023-02-22
+Last-Modified: 2026-05-09
+Post-History: 2016-03-16, 2018-02-20, 2022-05-22, 2022-10-07, 2023-02-22,
+              2026-05-09
 Content-Type: text/x-rst
 Requires: 67
 Replaces: 34, 46, 56
@@ -161,6 +162,12 @@ element can contain, in any order:
   marking stable on all architectures where a previous version is stable
   after arch testing on one of them (i.e. if the package is known to be fully
   arch-independent).
+
+- zero or more ``<straight-to-stable/>`` elements, possibly restricted
+  to specific package versions (at most one for each version) whose presence
+  indicates that stable keywords should be retained on version bumps (i.e. as
+  a recommendation for developers, which may be overridden if stabilization is
+  deemed inappropriate).
 
 - zero or more ``<use/>`` elements containing USE flag descriptions
   in different languages (at most one for each language), as detailed
