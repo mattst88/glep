@@ -6,7 +6,7 @@ Type: Standards Track
 Status: Final
 Version: 1
 Created: 2018-06-22
-Last-Modified: 2019-11-07
+Last-Modified: 2026-05-20
 Post-History: 2018-06-28
 Content-Type: text/x-rst
 ---
@@ -88,7 +88,7 @@ The general resolution mechanism is defined as follows:
 
 3. Once the signed approvals of *N1* developers are collected,
    the requestor sends a ‘Request for a general resolution’
-   to the gentoo-project mailing list.  The request shall include
+   to the gentoo-dev mailing list.  The request shall include
    the subject of the resolution, all signed approvals
    from the seconding developers, and a rationale for further
    discussion.  The discussion is open for at least two weeks.
@@ -223,7 +223,7 @@ and sends this text to them.  They add a cleartext signature to it,
 and send it back.  He adds his own signed subject, and prepares a text
 file with 29 signed subjects.
 
-At this point, he sends the following mail to gentoo-project:
+At this point, he sends the following mail to gentoo-dev:
 
   Dear developer community,
 
@@ -308,6 +308,6 @@ References
 
 Copyright
 =========
-This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
-Unported License. To view a copy of this license, visit
-https://creativecommons.org/licenses/by-sa/3.0/.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License.  To view a copy of this license, visit
+https://creativecommons.org/licenses/by-sa/4.0/.
