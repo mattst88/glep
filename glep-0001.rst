@@ -8,7 +8,7 @@ Type: Informational
 Status: Active
 Version: 4
 Created: 2003-05-31
-Last-Modified: 2025-06-30
+Last-Modified: 2026-05-20
 Post-History: 2003-06-01, 2003-07-02, 2008-01-19, 2008-06-05, 2011-03-09,
               2013-12-14, 2017-09-17, 2018-07-10, 2019-11-24
 Content-Type: text/x-rst
@@ -89,16 +89,15 @@ motivation or addressing backwards compatibility, or not in keeping with
 Gentoo Linux philosophy.
 
 If a pre-GLEP is rejected, the author may elect to take the pre-GLEP
-to the gentoo-dev@lists.gentoo.org mailing list (for technical GLEPs)
-or the gentoo-project@lists.gentoo.org mailing list (for non-technical GLEPs)
-to help flesh it out, gain feedback and consensus from the community at large,
-and improve the GLEP for re-submission.
+to the gentoo-dev@lists.gentoo.org mailing list to help flesh it out, gain
+feedback and consensus from the community at large, and improve the GLEP
+for re-submission.
 
-The author of the GLEP is then responsible for posting the GLEP to
-the gentoo-dev or gentoo-project mailing list (and additionally to
-the Gentoo Linux forums [#FORUMS]_ if they so desire), and marshaling community
-support for it.  As updates are necessary, the GLEP author should request
-merging changes to the master branch from a GLEP editor.
+The author of the GLEP is then responsible for posting the GLEP to the
+gentoo-dev mailing list (and additionally to the Gentoo Linux forums [#FORUMS]_
+if they so desire), and marshaling community support for it.  As updates are
+necessary, the GLEP author should request merging changes to the master branch
+from a GLEP editor.
 
 Standards Track GLEPs consist of two parts, a design document and a reference
 implementation.  The GLEP should be reviewed and accepted before a reference
