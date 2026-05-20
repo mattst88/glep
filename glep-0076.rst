@@ -10,7 +10,7 @@ Type: Informational
 Status: Active
 Version: 2
 Created: 2013-04-23
-Last-Modified: 2024-09-02
+Last-Modified: 2026-05-20
 Post-History: 2018-06-10, 2018-06-19, 2018-08-31, 2018-09-26, 2023-03-02,
               2024-04-04
 Content-Type: text/x-rst
@@ -99,7 +99,7 @@ of hosting) must comply with this policy.  Unofficial Gentoo projects
 are also recommended to use this policy.
 
 Questions regarding this policy should be directed to the Council
-or the ``gentoo-project`` mailing list.  Any concerns over possible
+or the ``gentoo-dev`` mailing list.  Any concerns over possible
 copyright violations should be directed to the Council if they cannot
 be worked out with the appropriate maintainer.
 
