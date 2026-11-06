@@ -4,11 +4,12 @@ Title: Package and category metadata
 Author: Michał Górny <mgorny@gentoo.org>
 Type: Standards Track
 Status: Final
-Version: 1.5
+Version: 1.6
 Created: 2016-03-14
-Last-Modified: 2026-05-09
+Last-Modified: 2026-11-16
 Post-History: 2016-03-16, 2018-02-20, 2022-05-22, 2022-10-07, 2023-02-22,
-              2026-05-09
+              2026-05-09, 2026-11-05, 2026-11-06, 2026-11-08, 2026-11-10,
+              2026-11-13
 Content-Type: text/x-rst
 Requires: 67
 Replaces: 34, 46, 56
@@ -182,6 +183,10 @@ Each ``<maintainer/>`` element describes a single maintainer.
 
 The ``<maintainer/>`` element has an obligatory ``type=""`` attribute whose
 value can be either ``person`` or ``project``.
+
+The ``<maintainer/>`` element has an optional ``proxied=""`` attribute whose
+value can be ``yes``, ``no``, ``proxy`` or ``maintainer-and-proxy``.  Its
+meaning is specified in GLEP 67.
 
 The ``<maintainer/>`` element contains the following elements, in any order:
 
@@ -394,6 +399,8 @@ while the ``status`` attribute is used only for upstream maintainers. However,
 package version restrictions and maintainer descriptions were also implicitly
 allowed on them. Since neither of the two was allowed by GLEP 46, this
 specification disallows them.
+
+The ``proxied`` attribute likewise applies only to Gentoo maintainers.
 
 
 Backwards Compatibility
