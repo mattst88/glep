@@ -32,6 +32,7 @@ v1.1
 
 v1.2
   Added the ``maintainer-and-proxy`` value of the ``proxied`` attribute.
+  Upstream maintainers with ``cc-on-bugs="yes"`` are CC-ed on bugs.
 
 
 Motivation
@@ -311,6 +312,9 @@ The package metadata description is fully self-sufficient for bug assignment.
 The order in which ``<maintainer/>`` elements occur (after applying
 restrictions) indicates the chain of responsibility. A bug is assigned
 to the first maintainer, while all the remaining maintainers are CC-ed.
+Upstream maintainers listed with ``cc-on-bugs="yes"`` in ``<upstream/>``
+(see GLEP 68) are CC-ed as well.  They are not maintainers of the package
+in Gentoo, so they are never assigned bugs.
 
 For packages which have no maintainers, repository-specific bug assignment
 rules apply. In particular, ::gentoo packages with no maintainer are assigned
