@@ -265,6 +265,12 @@ The ``<maintainer/>`` element has an optional ``status=""`` attribute whose
 value can be either ``active`` or ``inactive``. If not specified, an implicit
 ``unknown`` value is assumed.
 
+The ``<maintainer/>`` element has an optional ``cc-on-bugs=""`` attribute
+whose value can be either ``yes`` or ``no``.  If not specified, the default
+value of ``no`` is assumed.  ``yes`` indicates that the upstream maintainer
+wishes to be CC-ed on bugs for the package.  A maintainer
+with ``cc-on-bugs="yes"`` must have an ``<email/>`` element.
+
 The ``<maintainer/>`` element has the following attributes, in any order:
 
 - at most one ``<email/>`` element that contains the maintainer's e-mail
@@ -400,7 +406,15 @@ package version restrictions and maintainer descriptions were also implicitly
 allowed on them. Since neither of the two was allowed by GLEP 46, this
 specification disallows them.
 
-The ``proxied`` attribute likewise applies only to Gentoo maintainers.
+The ``proxied`` attribute likewise applies only to Gentoo maintainers,
+and the ``cc-on-bugs`` attribute only to upstream maintainers.
+
+Upstream developers sometimes ask to be CC-ed on bugs for their packages.
+Before version 1.6, the only way to do that was to list them as Gentoo
+maintainers as well.  Tools then could not tell them apart from proxied
+maintainers, and if listed first, they were assigned bugs for a package
+they do not maintain in Gentoo.  The ``cc-on-bugs`` attribute lets them be
+listed in ``<upstream/>`` only.
 
 
 Backwards Compatibility
@@ -476,11 +490,6 @@ Example metadata.xml file
         <email>project@example.com</email>
         <name>Example Project</name>
       </maintainer>
-      <maintainer type='person'>
-        <email>upstream@example.com</email>
-        <name>Upstream Developer</name>
-        <description>Upstream developer, wishing to be CC-ed on bugs</description>
-      </maintainer>
       <longdescription>
         First paragraph of extensive description.
 
@@ -514,7 +523,7 @@ Example metadata.xml file
         <flag name='bar' restrict='&gt;=dev-libs/foo-12'>Konfiguriert das Paket mit Unterstützung für bar</flag>
       </use>
       <upstream>
-        <maintainer status='active'>
+        <maintainer status='active' cc-on-bugs='yes'>
           <email>upstream@example.com</email>
           <name>Upstream Developer</name>
         </maintainer>
